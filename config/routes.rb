@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'comments/show'
+
+  post 'comments/create'
+
   get 'prefectures/show'
 
   # The priority is based upon order of creation: first created -> highest priority.

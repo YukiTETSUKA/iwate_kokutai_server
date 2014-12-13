@@ -5,6 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Prefecture.delete_all
 Prefecture.create([
   {name: '北海道'  , point: 0},
   {name: '青森県'  , point: 0},
@@ -53,4 +54,11 @@ Prefecture.create([
   {name: '宮崎県'  , point: 0},
   {name: '鹿児島県', point: 0},
   {name: '沖縄県'  , point: 0},
+])
+
+Comment.delete_all
+Comment.create([
+  {comment: 'ほげほげ', prefecture_id: 2},
+  {comment: 'ふがふが', prefecture_id: 2},
+  {comment: 'ぴよぴよ', prefecture_id: 1}
 ])

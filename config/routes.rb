@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'comments/show'
+  get 'comments/show/:prefecture_id' => 'comments#show'
 
   post 'comments/create'
 
